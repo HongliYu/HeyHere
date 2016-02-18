@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  HeyHere
+
+  Created by 虞鸿礼 on 16/2/3.
+  Copyright © 2016年 baidu. All rights reserved.
+*/
+
+"HeyHere"="看这里";
+"Off" = "关闭";
+"green"="绿色";
+"blue"="蓝色";
+"purple"="紫色";
+"yellow"="黄色";
+"orange"="橙色";
+"red"="红色";
+"Classic"="经典";
+"Dark"="黑暗";
+"Neon"="霓虹灯";
+"Pastel"="粉彩";
+"Hey here! Blinking %@ light!" = "我在这里！闪动的%@！";

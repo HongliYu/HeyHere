@@ -1,0 +1,20 @@
+//
+//  HHPrefixHeader.pch
+//  HeyHere
+//
+//  Created by 虞鸿礼 on 16/1/25.
+//  Copyright © 2016年 baidu. All rights reserved.
+//
+
+
+#import "HHMacro.h"
+#import "FMDB.h"
+#import "Masonry.h"
+#import "CocoaLumberjack.h"
+#import "NSString+Additions.h"
+#import "UIColor+Additions.h"
+#import "UIView+Additions.h"
+#import "NSTimer+BDBlocksSupport.h"
+#import "UIButton+EnlargeEdge.h"
+
+#define HHMacro_h

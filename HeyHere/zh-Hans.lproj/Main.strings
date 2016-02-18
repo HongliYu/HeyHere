@@ -1,0 +1,33 @@
+
+/* Class = "UIBarButtonItem"; title = "<<<"; ObjectID = "ByA-gz-pWL"; */
+"ByA-gz-pWL.title" = "<<<";
+
+/* Class = "UILabel"; text = "QuickBlink"; ObjectID = "CLS-ZJ-IBx"; */
+"CLS-ZJ-IBx.text" = "快闪";
+
+/* Class = "UIButton"; normalTitle = "Off"; ObjectID = "IlR-5g-LnF"; */
+"IlR-5g-LnF.normalTitle" = "关闭";
+
+/* Class = "UIBarButtonItem"; title = ">>>"; ObjectID = "Mwr-t1-Lv7"; */
+"Mwr-t1-Lv7.title" = ">>>";
+
+/* Class = "UIButton"; normalTitle = "Donate"; ObjectID = "Xz4-pU-mVi"; */
+"Xz4-pU-mVi.normalTitle" = "捐助";
+
+/* Class = "UIBarButtonItem"; title = "SMS"; ObjectID = "bbd-vh-zUi"; */
+"bbd-vh-zUi.title" = "短信";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "hae-RD-5d1"; */
+"hae-RD-5d1.title" = "设置";
+
+/* Class = "UINavigationItem"; title = "HeyHere"; ObjectID = "pKT-3r-yGw"; */
+"pKT-3r-yGw.title" = "看这里";
+
+/* Class = "UIBarButtonItem"; title = "<<<"; ObjectID = "se6-HB-2eK"; */
+"se6-HB-2eK.title" = "<<<";
+
+/* Class = "UILabel"; text = "Version 1.0"; ObjectID = "tCn-U7-7kp"; */
+"tCn-U7-7kp.text" = "版本 1.0";
+
+/* Class = "UILabel"; text = "TimeInterval\n"; ObjectID = "y0u-Ps-5MI"; */
+"y0u-Ps-5MI.text" = "时间间隔\n";
