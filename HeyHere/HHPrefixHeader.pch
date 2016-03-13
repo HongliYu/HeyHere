@@ -16,5 +16,6 @@
 #import "UIView+Additions.h"
 #import "NSTimer+BDBlocksSupport.h"
 #import "UIButton+EnlargeEdge.h"
+#import "HHImageUtils.h"
 
 #define HHMacro_h

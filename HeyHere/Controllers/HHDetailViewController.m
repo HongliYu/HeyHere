@@ -42,7 +42,7 @@ static const long ddLogLevel = DDLogLevelAll;
 }
 
 - (void)setNormalBackgroundColor {
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = MAIN_BACKGROUND_COLOR;
 }
 
 - (void)changeBackGroundColors {
@@ -71,19 +71,19 @@ static const long ddLogLevel = DDLogLevelAll;
 
 - (void)setNavBarColor:(UIColor *)navBarColor titleColor:(UIColor *)titleColor {
     [[UINavigationBar appearance] setBarTintColor:navBarColor];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:MAIN_TEXT_COLOR}];
 }
 
 - (void)displaySMSComposerSheet {
-    [self setNavBarColor:[UIColor blackColor] titleColor:[UIColor whiteColor]]; // 必须在初始化之前设置，否则无效
+    [self setNavBarColor:MAIN_BACKGROUND_COLOR titleColor:MAIN_TEXT_COLOR]; // 必须在初始化之前设置，否则无效
     HHShortMessageViewController *picker = [[HHShortMessageViewController alloc] init];
-    [[picker navigationBar] setTintColor:[UIColor whiteColor]]; // 取消按钮的颜色，必须在初始化完成以后设置
+    [[picker navigationBar] setTintColor:MAIN_TEXT_COLOR]; // 取消按钮的颜色，必须在初始化完成以后设置
 //    [[picker navigationBar] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}]; // 导航栏标题的颜色，可在初始化之前设置
     picker.messageComposeDelegate = self;
     picker.body = [NSString stringWithFormat:NSLocalizedString(@"Hey here! Blinking %@ light!", ""),
                    NSLocalizedString([HHMainManager sharedHHMainManager].currentColorViewModel.colorDesc, "")];
     [self presentViewController:picker animated:YES completion:^{
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     }];
 }
 

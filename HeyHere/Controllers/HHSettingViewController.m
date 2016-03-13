@@ -100,13 +100,15 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
     self.colorpacksVerticalSegment.textAlignment = SMVerticalSegmentedControlTextAlignmentLeft;
     self.colorpacksVerticalSegment.selectionIndicatorThickness = 4;
     [self.colorpacksVerticalSegment setTextFont:[UIFont systemFontOfSize:18.f]];
-    [self.colorpacksVerticalSegment setTextColor:[UIColor whiteColor]];
+    [self.colorpacksVerticalSegment setTextColor:MAIN_TEXT_COLOR];
     [self.colorpacksVerticalSegment setSelectedTextColor:[UIColor greenColor]];
     
     // quickblinkbutton
     [self updateQuickBlinkButton];
     
     // timeIntervalSlider
+    [self.timeIntervalSlider setThumbImage:[HHImageUtils generateHandleImageWithColor:[UIColor redColor]]
+                                  forState:UIControlStateNormal];
     self.timeIntervalSlider.dataSource = self;
     self.timeIntervalSlider.value = [HHMainManager sharedHHMainManager].blinkTimeInterval;
 
@@ -120,9 +122,9 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
         [self.quickBlinkButton setTitleColor:[UIColor colorWithHexString:quickBlinkColorViewModel.colorString]
                                     forState:UIControlStateNormal];
     } else {
-        [self.quickBlinkButton setTitle:NSLocalizedString(@"Off", @"")
+        [self.quickBlinkButton setTitle:NSLocalizedString(@"off", @"")
                                forState:UIControlStateNormal];
-        [self.quickBlinkButton setTitleColor:[UIColor whiteColor]
+        [self.quickBlinkButton setTitleColor:MAIN_TEXT_COLOR
                                     forState:UIControlStateNormal];
     }
 }
@@ -139,7 +141,7 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
         self.quickBlinkTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         self.quickBlinkTableView.bounces = NO;
         self.quickBlinkTableView.layer.borderWidth = 2.f;
-        self.quickBlinkTableView.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.quickBlinkTableView.layer.borderColor = MAIN_TEXT_COLOR.CGColor;
     }
     
     if ([self.quickBlinkTableView superview]) {
@@ -201,7 +203,7 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HHQuickBlinkTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kQuickBlinkCellIdentifier];
     if (indexPath.row == 0) {
-        cell.textLabel.text = NSLocalizedString(@"Off", @"");
+        cell.textLabel.text = NSLocalizedString(@"off", @"");
     } else {
         HHColor *color = [HHMainManager sharedHHMainManager].currentColors.colors[indexPath.row - 1];
         if (color) {
