@@ -11,6 +11,8 @@
 #import "HHDetailViewController.h"
 #import "HHSettingViewController.h"
 #import "ViewController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +23,7 @@
 #pragma mark - Notification Received
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Fabric with:@[[Crashlytics class]]];
     [[HHMainManager sharedHHMainManager] createLogger];
     [[HHMainManager sharedHHMainManager] creatBaseData];
     return YES;
