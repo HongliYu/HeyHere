@@ -8,6 +8,9 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.3):
     - CocoaLumberjack/Default
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - FMDB (2.6):
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
@@ -16,12 +19,16 @@ PODS:
 DEPENDENCIES:
   - ASValueTrackingSlider (~> 0.11.2)
   - CocoaLumberjack (~> 2.0.0)
+  - Crashlytics
+  - Fabric
   - FMDB (~> 2.5)
   - Masonry (~> 0.6.4)
 
 SPEC CHECKSUMS:
   ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
 
