@@ -12,9 +12,9 @@
 @implementation HHQuickBlinkTableViewCell
 
 - (void)awakeFromNib {
-    self.textLabel.textColor = [UIColor whiteColor];
-    self.textLabel.highlightedTextColor = [UIColor blackColor];
-    self.backgroundColor = [UIColor blackColor];
+    self.textLabel.textColor = MAIN_TEXT_COLOR;
+    self.textLabel.highlightedTextColor = MAIN_BACKGROUND_COLOR;
+    self.backgroundColor = MAIN_BACKGROUND_COLOR;
     self.textLabel.textAlignment = NSTextAlignmentCenter;
 }
 

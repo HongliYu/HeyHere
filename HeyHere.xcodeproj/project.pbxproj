@@ -41,6 +41,7 @@
 		E18B87AC1C51F47700F991B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18B87AB1C51F47700F991B0 /* Assets.xcassets */; };
 		E1AA60B91C746D0D00DAC827 /* HeyHereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AA60B81C746D0D00DAC827 /* HeyHereTests.m */; };
 		E1D2E75C1C75978B004049B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D2E75E1C75978B004049B4 /* Launch Screen.storyboard */; };
+		F7AB1F601C956DED00AC6311 /* HHImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,8 +122,8 @@
 		E1AA60B81C746D0D00DAC827 /* HeyHereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeyHereTests.m; sourceTree = "<group>"; };
 		E1AA60BA1C746D0D00DAC827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D2E75D1C75978B004049B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
-		E1D2E7601C75978D004049B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
-		E1D2E7621C75978E004049B4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		F7AB1F5E1C956DED00AC6311 /* HHImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHImageUtils.h; sourceTree = "<group>"; };
+		F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHImageUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +225,8 @@
 				E15FA1F51C61BC200078B72E /* UIView+Additions.m */,
 				E127185E1C57450400600237 /* HHFileManager.h */,
 				E127185F1C57450400600237 /* HHFileManager.m */,
+				F7AB1F5E1C956DED00AC6311 /* HHImageUtils.h */,
+				F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				E13C33681C59BCD40089DC4F /* HHColor.m in Sources */,
 				E18B87A41C51F47700F991B0 /* AppDelegate.m in Sources */,
 				E12718341C56125A00600237 /* NSTimer+BDBlocksSupport.m in Sources */,
+				F7AB1F601C956DED00AC6311 /* HHImageUtils.m in Sources */,
 				E12718631C577ADF00600237 /* HHDetailViewController.m in Sources */,
 				E15FA1F61C61BC200078B72E /* UIView+Additions.m in Sources */,
 				E13C33741C59FC300089DC4F /* CALayer+Additions.m in Sources */,
@@ -538,8 +542,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E1D2E75D1C75978B004049B4 /* Base */,
-				E1D2E7601C75978D004049B4 /* en */,
-				E1D2E7621C75978E004049B4 /* zh-Hans */,
 			);
 			name = "Launch Screen.storyboard";
 			sourceTree = "<group>";

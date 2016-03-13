@@ -5,7 +5,7 @@
 /* Class = "UILabel"; text = "QuickBlink"; ObjectID = "CLS-ZJ-IBx"; */
 "CLS-ZJ-IBx.text" = "快闪";
 
-/* Class = "UIButton"; normalTitle = "Off"; ObjectID = "IlR-5g-LnF"; */
+/* Class = "UIButton"; normalTitle = "off"; ObjectID = "IlR-5g-LnF"; */
 "IlR-5g-LnF.normalTitle" = "关闭";
 
 /* Class = "UIBarButtonItem"; title = ">>>"; ObjectID = "Mwr-t1-Lv7"; */
