@@ -14,8 +14,8 @@
 #define STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
 #define NAVIGATIONBAR_HEIGHT 44.f
 
-#define MAIN_BACKGROUND_COLOR [UIColor colorWithRed:255.f/255.f green:243.f/255.f blue:243.f/255.f alpha:1.0]
-#define MAIN_TEXT_COLOR [UIColor colorWithRed:255.f/255.f green:0/255.f blue:0/255.f alpha:1.0]
+#define MAIN_BACKGROUND_COLOR [UIColor colorWithRed:39/255.f green:40/255.f blue:34/255.f alpha:1.0]
+#define MAIN_TEXT_COLOR [UIColor colorWithRed:240/255.f green:240/255.f blue:238/255.f alpha:1.0]
 
 // Singleton
 #define DEFINE_SINGLETON_FOR_HEADER(className) \

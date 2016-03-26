@@ -31,6 +31,7 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
 @property (strong, nonatomic) IBOutlet ASValueTrackingSlider *timeIntervalSlider;
 @property (strong, nonatomic) IBOutlet SMVerticalSegmentedControl *colorpacksVerticalSegment;
 @property (strong, nonatomic) IBOutlet UIButton *donateButton;
+@property (strong, nonatomic) IBOutlet UILabel *quickBlinkLabel;
 @property (strong, nonatomic) UITableView *quickBlinkTableView;
 
 @end
@@ -140,7 +141,7 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
                        forCellReuseIdentifier:kQuickBlinkCellIdentifier];
         self.quickBlinkTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         self.quickBlinkTableView.bounces = NO;
-        self.quickBlinkTableView.layer.borderWidth = 2.f;
+        self.quickBlinkTableView.layer.borderWidth = 1.f;
         self.quickBlinkTableView.layer.borderColor = MAIN_TEXT_COLOR.CGColor;
     }
     

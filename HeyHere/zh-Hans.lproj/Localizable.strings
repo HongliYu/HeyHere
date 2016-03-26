@@ -11,6 +11,7 @@
 "green"="绿色";
 "blue"="蓝色";
 "purple"="紫色";
+"pink"="粉色";
 "yellow"="黄色";
 "orange"="橙色";
 "red"="红色";
@@ -18,4 +19,4 @@
 "Dark"="黑暗";
 "Neon"="霓虹灯";
 "Pastel"="粉彩";
-"Hey here! Blinking %@ light!" = "我在这里！闪动的%@！";
+"Hey here! Blinking %@ light!" = "看这里！闪动的%@！";

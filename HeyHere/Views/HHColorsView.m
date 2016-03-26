@@ -85,8 +85,8 @@
 
         }
     }
-    self.layer.borderWidth = 2;
-    self.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.layer.borderWidth = 1;
+    self.layer.borderColor = MAIN_TEXT_COLOR.CGColor;
 }
 
 - (void)fillRect:(CGRect)rect

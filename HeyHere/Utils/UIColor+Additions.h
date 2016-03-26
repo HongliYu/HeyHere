@@ -16,5 +16,6 @@
                      green:(NSInteger)green
                       blue:(NSInteger)blue
                      alpha:(NSInteger)alpha;
++ (NSString *)hexStringFromColor:(UIColor *)color;
 
 @end

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o0Y-Hw-AUo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o0Y-Hw-AUo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +36,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AoL-tV-RvE">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.15686274509803921" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HHMainTableViewCell" id="Ovu-Al-fO0" customClass="HHMainTableViewCell">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -66,7 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="HeyHere" id="pKT-3r-yGw">
                         <barButtonItem key="rightBarButtonItem" title="&gt;&gt;&gt;" id="Mwr-t1-Lv7">
-                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="settingAction:" destination="BYZ-38-t0r" id="6S2-dE-UbU"/>
                                 <segue destination="c9L-ln-2hD" kind="show" id="TCT-De-BS2"/>
@@ -109,24 +109,24 @@
                                                 <state key="normal" title="off"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                        <integer key="value" value="2"/>
+                                                        <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
-                                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="1" green="0.99769262287647154" blue="0.85260262717016011" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="quickBlinkButtonAction:" destination="c9L-ln-2hD" eventType="touchUpInside" id="La7-nZ-zwu"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuickBlink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLS-ZJ-IBx">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlinkNow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLS-ZJ-IBx">
                                                 <rect key="frame" x="18" y="0.0" width="100" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="nIw-Ww-RfX"/>
                                                     <constraint firstAttribute="height" constant="24" id="wWu-uM-N3Z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8t-gN-Er5" customClass="HHColorsView">
@@ -166,7 +166,7 @@
                                                 <string key="text">Interval
 </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-qe-uf7" customClass="SMVerticalSegmentedControl">
@@ -184,7 +184,7 @@
                                                     <constraint firstAttribute="height" constant="24" id="aDz-FB-DKo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz4-pU-mVi">
@@ -195,7 +195,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Donate">
-                                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="contentHorizontalAlignment">
@@ -253,7 +253,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1529411765" green="0.15686274510000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="dEl-A1-KtY" secondAttribute="trailing" id="05X-wO-6Xu"/>
                             <constraint firstItem="dEl-A1-KtY" firstAttribute="top" secondItem="sAg-cz-Cdb" secondAttribute="topMargin" id="DW2-0a-RQx"/>
@@ -270,7 +270,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="hae-RD-5d1">
                         <barButtonItem key="leftBarButtonItem" title="&lt;&lt;&lt;" id="ByA-gz-pWL">
-                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="5eq-0j-C2h" kind="unwind" unwindAction="unwindSegueToMainViewController:" id="DGR-2I-3mq"/>
                             </connections>
@@ -284,13 +284,14 @@
                         <outlet property="neonColorsView" destination="Ruy-Ye-0RO" id="zFP-gR-Lag"/>
                         <outlet property="pastelColorsView" destination="mh0-Dm-VlI" id="tDt-Pn-PmN"/>
                         <outlet property="quickBlinkButton" destination="IlR-5g-LnF" id="KP9-65-5bP"/>
+                        <outlet property="quickBlinkLabel" destination="CLS-ZJ-IBx" id="D75-av-Fg5"/>
                         <outlet property="timeIntervalSlider" destination="PlM-JA-iUo" id="M4D-r1-SFH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="54f-jl-tAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5eq-0j-C2h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="285" y="429"/>
+            <point key="canvasLocation" x="347" y="429"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Ow0-GF-yah">
@@ -307,13 +308,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Tuk-hz-0Pp">
                         <barButtonItem key="leftBarButtonItem" title="&lt;&lt;&lt;" id="se6-HB-2eK">
-                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="c8U-QX-HZS" kind="unwind" unwindAction="unwindSegueToMainViewController:" id="JIk-qP-ZEy"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="SMS" id="bbd-vh-zUi">
-                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="sendShortMessageAction:" destination="q0D-hV-wML" id="9Mw-s0-eL2"/>
                             </connections>

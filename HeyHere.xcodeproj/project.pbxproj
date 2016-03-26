@@ -41,6 +41,7 @@
 		E18B87AC1C51F47700F991B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18B87AB1C51F47700F991B0 /* Assets.xcassets */; };
 		E1AA60B91C746D0D00DAC827 /* HeyHereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AA60B81C746D0D00DAC827 /* HeyHereTests.m */; };
 		E1D2E75C1C75978B004049B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D2E75E1C75978B004049B4 /* Launch Screen.storyboard */; };
+		F715423C1CA664FD007BCAEC /* hhiconfonts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F715423B1CA664FD007BCAEC /* hhiconfonts.ttf */; };
 		F7AB1F601C956DED00AC6311 /* HHImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		E1AA60B81C746D0D00DAC827 /* HeyHereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeyHereTests.m; sourceTree = "<group>"; };
 		E1AA60BA1C746D0D00DAC827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D2E75D1C75978B004049B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F715423B1CA664FD007BCAEC /* hhiconfonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hhiconfonts.ttf; path = Desc/hhiconfonts/fonts/hhiconfonts.ttf; sourceTree = SOURCE_ROOT; };
 		F7AB1F5E1C956DED00AC6311 /* HHImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHImageUtils.h; sourceTree = "<group>"; };
 		F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHImageUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,6 +303,7 @@
 		E18B879F1C51F47700F991B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F715423B1CA664FD007BCAEC /* hhiconfonts.ttf */,
 				E127180D1C55ED9000600237 /* README.md */,
 				E1145D9E1C62110200FF4C39 /* Info.plist */,
 				E18B87AB1C51F47700F991B0 /* Assets.xcassets */,
@@ -409,6 +412,7 @@
 			files = (
 				E18B87AC1C51F47700F991B0 /* Assets.xcassets in Resources */,
 				E18B87AA1C51F47700F991B0 /* Main.storyboard in Resources */,
+				F715423C1CA664FD007BCAEC /* hhiconfonts.ttf in Resources */,
 				E127184E1C5639A100600237 /* cache_colors.plist in Resources */,
 				E127180E1C55ED9000600237 /* README.md in Resources */,
 				E15FA2041C61F82D0078B72E /* Localizable.strings in Resources */,

@@ -66,7 +66,7 @@ NSString* const kCellIdentifier = @"HHMainTableViewCell";
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
 
     // statusbar
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)createBaseData {

@@ -83,7 +83,7 @@ static const long ddLogLevel = DDLogLevelAll;
     picker.body = [NSString stringWithFormat:NSLocalizedString(@"Hey here! Blinking %@ light!", ""),
                    NSLocalizedString([HHMainManager sharedHHMainManager].currentColorViewModel.colorDesc, "")];
     [self presentViewController:picker animated:YES completion:^{
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }];
 }
 
