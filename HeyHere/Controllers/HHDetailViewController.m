@@ -8,6 +8,7 @@
 
 #import "HHDetailViewController.h"
 #import "HHMainManager.h"
+#import "HHShareManager.h"
 #import "HHColorViewModel.h"
 #import "ViewController.h"
 #import "HHShortMessageViewController.h"
@@ -18,13 +19,18 @@ static const long ddLogLevel = DDLogLevelAll;
 
 @property (nonatomic, assign) int blinkFlag;
 @property (nonatomic, strong) NSTimer *timer;
+@property (strong, nonatomic) IBOutlet UIButton *shareSessionButton;
+@property (strong, nonatomic) IBOutlet UIButton *shareTimelineButton;
 
 @end
 
 @implementation HHDetailViewController
 
+#pragma mark - LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self configBaseUI];
+
     self.blinkFlag = 0;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:[HHMainManager sharedHHMainManager].blinkTimeInterval
                                                   target:self
@@ -32,6 +38,17 @@ static const long ddLogLevel = DDLogLevelAll;
                                                 userInfo:nil
                                                  repeats:YES];
     [self.timer fire];
+}
+
+#pragma mark - BaseUI
+- (void)configBaseUI {
+    [_shareSessionButton.titleLabel setFont:[UIFont fontWithName:@"iconfont" size:32.f]];
+    [_shareSessionButton setTitle:@"\U0000e63b" forState:UIControlStateNormal];
+    [_shareSessionButton.titleLabel setTextColor:[UIColor whiteColor]];
+    
+    [_shareTimelineButton.titleLabel setFont:[UIFont fontWithName:@"iconfont" size:32.f]];
+    [_shareTimelineButton setTitle:@"\U0000e8dd" forState:UIControlStateNormal];
+    [_shareTimelineButton.titleLabel setTextColor:[UIColor whiteColor]];
 }
 
 - (void)setCustomeBackgroundColor {
@@ -55,20 +72,6 @@ static const long ddLogLevel = DDLogLevelAll;
     }
 }
 
-- (IBAction)sendShortMessageAction:(id)sender {
-    Class messageClass = (NSClassFromString(@"MFMessageComposeViewController"));
-    if (messageClass != nil) {
-        // Check whether the current device is configured for sending SMS messages
-        if ([messageClass canSendText]) {
-            [self displaySMSComposerSheet];
-        } else {
-            DDLogDebug(@"设备没有短信功能");
-        }
-    } else {
-        DDLogDebug(@"iOS版本过低,iOS4.0以上才支持程序内发送短信");
-    }
-}
-
 - (void)setNavBarColor:(UIColor *)navBarColor titleColor:(UIColor *)titleColor {
     [[UINavigationBar appearance] setBarTintColor:navBarColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:MAIN_TEXT_COLOR}];
@@ -85,6 +88,31 @@ static const long ddLogLevel = DDLogLevelAll;
     [self presentViewController:picker animated:YES completion:^{
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }];
+}
+
+#pragma mark - Actions
+- (IBAction)sendShortMessageAction:(id)sender {
+    Class messageClass = (NSClassFromString(@"MFMessageComposeViewController"));
+    if (messageClass != nil) {
+        // Check whether the current device is configured for sending SMS messages
+        if ([messageClass canSendText]) {
+            [self displaySMSComposerSheet];
+        } else {
+            DDLogDebug(@"设备没有短信功能");
+        }
+    } else {
+        DDLogDebug(@"iOS版本过低,iOS4.0以上才支持程序内发送短信");
+    }
+}
+
+- (IBAction)shareSessionAction:(id)sender {
+    [[HHShareManager sharedHHShareManager] setScene:WXSceneSession];
+    [[HHShareManager sharedHHShareManager] sendColorContent];
+}
+
+- (IBAction)shareTimelineAction:(id)sender {
+    [[HHShareManager sharedHHShareManager] setScene:WXSceneTimeline];
+    [[HHShareManager sharedHHShareManager] sendColorContent];
 }
 
 #pragma mark - MFMessageComposeViewControllerDelegate

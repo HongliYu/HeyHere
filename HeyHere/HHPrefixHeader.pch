@@ -17,5 +17,6 @@
 #import "NSTimer+BDBlocksSupport.h"
 #import "UIButton+EnlargeEdge.h"
 #import "HHImageUtils.h"
+#import "WXApi.h"
 
 #define HHMacro_h

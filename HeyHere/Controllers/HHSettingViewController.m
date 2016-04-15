@@ -6,6 +6,7 @@
 //  Copyright © 2016年 baidu. All rights reserved.
 //
 
+
 #import "HHSettingViewController.h"
 #import "HHColorsView.h"
 #import "HHMainManager.h"
@@ -108,7 +109,8 @@ UITableViewDataSource, ASValueTrackingSliderDataSource>
     [self updateQuickBlinkButton];
     
     // timeIntervalSlider
-    [self.timeIntervalSlider setThumbImage:[HHImageUtils generateHandleImageWithColor:[UIColor redColor]]
+    CGSize size = CGSizeMake(8.f, 8.f);
+    [self.timeIntervalSlider setThumbImage:[HHImageUtils createImageWithColor:[UIColor redColor] andSize:size]
                                   forState:UIControlStateNormal];
     self.timeIntervalSlider.dataSource = self;
     self.timeIntervalSlider.value = [HHMainManager sharedHHMainManager].blinkTimeInterval;

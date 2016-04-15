@@ -15,6 +15,7 @@ PODS:
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
   - Masonry (0.6.4)
+  - PSTAlertController (1.2.0)
 
 DEPENDENCIES:
   - ASValueTrackingSlider (~> 0.11.2)
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - Fabric
   - FMDB (~> 2.5)
   - Masonry (~> 0.6.4)
+  - PSTAlertController (~> 1.2.0)
 
 SPEC CHECKSUMS:
   ASValueTrackingSlider: 45c9f78252da60de01d8f2afe869aaf90dd978d9
@@ -31,5 +33,6 @@ SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  PSTAlertController: 9b802dfbda54fee2683bfd6dda7023a6de895d5b
 
 COCOAPODS: 0.38.2

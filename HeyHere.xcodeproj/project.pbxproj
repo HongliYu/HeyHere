@@ -43,6 +43,14 @@
 		E1D2E75C1C75978B004049B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D2E75E1C75978B004049B4 /* Launch Screen.storyboard */; };
 		F715423C1CA664FD007BCAEC /* hhiconfonts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F715423B1CA664FD007BCAEC /* hhiconfonts.ttf */; };
 		F7AB1F601C956DED00AC6311 /* HHImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */; };
+		F7C03F8A1CC0B77600A85008 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7C03F891CC0B77600A85008 /* iconfont.ttf */; };
+		F7C41AFD1CC0A58000105894 /* HHShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C41AFC1CC0A58000105894 /* HHShareManager.m */; };
+		F7E9715A1CC09AB3008CE347 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E971561CC09AB3008CE347 /* libWeChatSDK.a */; };
+		F7E9715C1CC09AE9008CE347 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E9715B1CC09AE9008CE347 /* SystemConfiguration.framework */; };
+		F7E9715E1CC09B48008CE347 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E9715D1CC09B48008CE347 /* libz.tbd */; };
+		F7E971601CC09B57008CE347 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E9715F1CC09B57008CE347 /* libsqlite3.0.tbd */; };
+		F7E971621CC09B62008CE347 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E971611CC09B62008CE347 /* libc++.tbd */; };
+		F7E971641CC09EFB008CE347 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E971631CC09EFB008CE347 /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +134,18 @@
 		F715423B1CA664FD007BCAEC /* hhiconfonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hhiconfonts.ttf; path = Desc/hhiconfonts/fonts/hhiconfonts.ttf; sourceTree = SOURCE_ROOT; };
 		F7AB1F5E1C956DED00AC6311 /* HHImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHImageUtils.h; sourceTree = "<group>"; };
 		F7AB1F5F1C956DED00AC6311 /* HHImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHImageUtils.m; sourceTree = "<group>"; };
+		F7C03F891CC0B77600A85008 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = Desc/iconfont/iconfont.ttf; sourceTree = SOURCE_ROOT; };
+		F7C41AFB1CC0A58000105894 /* HHShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHShareManager.h; sourceTree = "<group>"; };
+		F7C41AFC1CC0A58000105894 /* HHShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHShareManager.m; sourceTree = "<group>"; };
+		F7E971561CC09AB3008CE347 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		F7E971571CC09AB3008CE347 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		F7E971581CC09AB3008CE347 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		F7E971591CC09AB3008CE347 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		F7E9715B1CC09AE9008CE347 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F7E9715D1CC09B48008CE347 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F7E9715F1CC09B57008CE347 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F7E971611CC09B62008CE347 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F7E971631CC09EFB008CE347 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +153,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E971641CC09EFB008CE347 /* CoreTelephony.framework in Frameworks */,
+				F7E971621CC09B62008CE347 /* libc++.tbd in Frameworks */,
+				F7E971601CC09B57008CE347 /* libsqlite3.0.tbd in Frameworks */,
+				F7E9715E1CC09B48008CE347 /* libz.tbd in Frameworks */,
+				F7E9715C1CC09AE9008CE347 /* SystemConfiguration.framework in Frameworks */,
 				E12718681C58D74500600237 /* MessageUI.framework in Frameworks */,
 				6ED84833B2B98C4E15EB3288 /* libPods.a in Frameworks */,
+				F7E9715A1CC09AB3008CE347 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +186,11 @@
 		DFC6D61044DD29D020481CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7E971631CC09EFB008CE347 /* CoreTelephony.framework */,
+				F7E971611CC09B62008CE347 /* libc++.tbd */,
+				F7E9715F1CC09B57008CE347 /* libsqlite3.0.tbd */,
+				F7E9715D1CC09B48008CE347 /* libz.tbd */,
+				F7E9715B1CC09AE9008CE347 /* SystemConfiguration.framework */,
 				E12718671C58D74500600237 /* MessageUI.framework */,
 				37F8CFEF85D6681EF29888CE /* libPods.a */,
 			);
@@ -253,6 +284,8 @@
 			children = (
 				E12718351C56128700600237 /* HHMainManager.h */,
 				E12718361C56128700600237 /* HHMainManager.m */,
+				F7C41AFB1CC0A58000105894 /* HHShareManager.h */,
+				F7C41AFC1CC0A58000105894 /* HHShareManager.m */,
 				E127185B1C573E5900600237 /* HHDBRoot.h */,
 				E127185C1C573E5900600237 /* HHDBRoot.m */,
 			);
@@ -283,6 +316,7 @@
 		E18B879E1C51F47700F991B0 /* HeyHere */ = {
 			isa = PBXGroup;
 			children = (
+				F7E971541CC09A94008CE347 /* Library */,
 				E12643081C5F11DF00EEB8E3 /* Vendors */,
 				E12718161C56114200600237 /* Controllers */,
 				E12718181C56114200600237 /* Views */,
@@ -304,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				F715423B1CA664FD007BCAEC /* hhiconfonts.ttf */,
+				F7C03F891CC0B77600A85008 /* iconfont.ttf */,
 				E127180D1C55ED9000600237 /* README.md */,
 				E1145D9E1C62110200FF4C39 /* Info.plist */,
 				E18B87AB1C51F47700F991B0 /* Assets.xcassets */,
@@ -323,6 +358,25 @@
 				E1AA60BA1C746D0D00DAC827 /* Info.plist */,
 			);
 			path = HeyHereTests;
+			sourceTree = "<group>";
+		};
+		F7E971541CC09A94008CE347 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F7E971551CC09A94008CE347 /* WeChatSDK */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F7E971551CC09A94008CE347 /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F7E971561CC09AB3008CE347 /* libWeChatSDK.a */,
+				F7E971571CC09AB3008CE347 /* WechatAuthSDK.h */,
+				F7E971581CC09AB3008CE347 /* WXApi.h */,
+				F7E971591CC09AB3008CE347 /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +471,7 @@
 				E127180E1C55ED9000600237 /* README.md in Resources */,
 				E15FA2041C61F82D0078B72E /* Localizable.strings in Resources */,
 				E126436D1C5F873600EEB8E3 /* HHQuickBlinkTableViewCell.xib in Resources */,
+				F7C03F8A1CC0B77600A85008 /* iconfont.ttf in Resources */,
 				E15FA2151C6210450078B72E /* InfoPlist.strings in Resources */,
 				E1D2E75C1C75978B004049B4 /* Launch Screen.storyboard in Resources */,
 				E12718251C56121000600237 /* HHMainTableViewCell.xib in Resources */,
@@ -492,6 +547,7 @@
 				E12718341C56125A00600237 /* NSTimer+BDBlocksSupport.m in Sources */,
 				F7AB1F601C956DED00AC6311 /* HHImageUtils.m in Sources */,
 				E12718631C577ADF00600237 /* HHDetailViewController.m in Sources */,
+				F7C41AFD1CC0A58000105894 /* HHShareManager.m in Sources */,
 				E15FA1F61C61BC200078B72E /* UIView+Additions.m in Sources */,
 				E13C33741C59FC300089DC4F /* CALayer+Additions.m in Sources */,
 				E12718661C58BFB900600237 /* HHShortMessageViewController.m in Sources */,
@@ -657,6 +713,10 @@
 				INFOPLIST_FILE = HeyHere/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HeyHere/Library/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.HeyHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -672,6 +732,10 @@
 				INFOPLIST_FILE = HeyHere/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HeyHere/Library/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.HeyHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

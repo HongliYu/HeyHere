@@ -304,7 +304,37 @@
                     <view key="view" contentMode="scaleToFill" id="Ke0-4i-DzA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMk-hw-clM">
+                                <rect key="frame" x="20" y="530" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gKi-VR-d5c"/>
+                                    <constraint firstAttribute="height" constant="50" id="qqJ-Tc-Dij"/>
+                                </constraints>
+                                <state key="normal" title="session"/>
+                                <connections>
+                                    <action selector="shareSessionAction:" destination="q0D-hV-wML" eventType="touchUpInside" id="hNy-FC-YfJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-YK-q4l">
+                                <rect key="frame" x="78" y="530" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fFa-JU-AWG"/>
+                                    <constraint firstAttribute="height" constant="50" id="rx9-ju-cMc"/>
+                                </constraints>
+                                <state key="normal" title="timeline"/>
+                                <connections>
+                                    <action selector="shareTimelineAction:" destination="q0D-hV-wML" eventType="touchUpInside" id="xiD-ms-OyJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iMk-hw-clM" firstAttribute="leading" secondItem="Ke0-4i-DzA" secondAttribute="leading" constant="20" id="0sQ-UO-sPD"/>
+                            <constraint firstItem="GSr-YK-q4l" firstAttribute="leading" secondItem="iMk-hw-clM" secondAttribute="trailing" constant="8" id="BrB-u3-nX4"/>
+                            <constraint firstItem="I1f-Me-7rY" firstAttribute="top" secondItem="iMk-hw-clM" secondAttribute="bottom" constant="20" id="hqj-3q-I8n"/>
+                            <constraint firstItem="I1f-Me-7rY" firstAttribute="top" secondItem="GSr-YK-q4l" secondAttribute="bottom" constant="20" id="s7S-Cj-LKn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tuk-hz-0Pp">
                         <barButtonItem key="leftBarButtonItem" title="&lt;&lt;&lt;" id="se6-HB-2eK">
@@ -320,6 +350,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="shareSessionButton" destination="iMk-hw-clM" id="KFU-hD-o8b"/>
+                        <outlet property="shareTimelineButton" destination="GSr-YK-q4l" id="yOi-uj-0Cu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wp7-LW-qeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="c8U-QX-HZS" userLabel="Exit" sceneMemberID="exit"/>

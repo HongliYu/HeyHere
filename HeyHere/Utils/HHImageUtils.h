@@ -10,6 +10,6 @@
 
 @interface HHImageUtils : NSObject
 
-+ (UIImage *)generateHandleImageWithColor:(UIColor *)color;
++ (UIImage *)createImageWithColor:(UIColor *)color andSize:(CGSize)size;
 
 @end

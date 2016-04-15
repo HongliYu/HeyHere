@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HHMainManager.h"
+#import "HHShareManager.h"
 #import "HHDetailViewController.h"
 #import "HHSettingViewController.h"
 #import "ViewController.h"
@@ -26,7 +27,16 @@
     [Fabric with:@[[Crashlytics class]]];
     [[HHMainManager sharedHHMainManager] createLogger];
     [[HHMainManager sharedHHMainManager] creatBaseData];
+    [HHShareManager sharedHHShareManager];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [WXApi handleOpenURL:url delegate:[HHShareManager sharedHHShareManager]];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [WXApi handleOpenURL:url delegate:[HHShareManager sharedHHShareManager]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
