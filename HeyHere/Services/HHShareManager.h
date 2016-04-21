@@ -15,5 +15,10 @@ DEFINE_SINGLETON_FOR_HEADER(HHShareManager);
 
 - (void)setScene:(enum WXScene)scene;
 - (void)sendColorContent;
+- (BOOL)checkIfWeChatInstalled;
+- (void)alertIfNeedInstallWeChat;
+
+- (void)shareSessionAction;
+- (void)shareTimelineAction;
 
 @end

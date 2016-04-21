@@ -59,6 +59,44 @@ DEFINE_SINGLETON_FOR_CLASS(HHShareManager);
     [WXApi sendReq:shareRequest];
 }
 
+- (BOOL)checkIfWeChatInstalled {
+    return [WXApi isWXAppInstalled];
+}
+
+- (void)alertIfNeedInstallWeChat {
+    PSTAlertController *alertController = [PSTAlertController alertWithTitle:NSLocalizedString(@"WeChat Not Installed", "")
+                                                                     message:@""];
+    PSTAlertAction *installWeChatAction = [PSTAlertAction actionWithTitle:NSLocalizedString(@"Install WeChat", "")
+                                                            style:PSTAlertActionStyleDefault
+                                                          handler:^(PSTAlertAction * _Nonnull action) {
+                                                              [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[WXApi getWXAppInstallUrl]]];
+                                                          }];
+    [alertController addAction:installWeChatAction];
+    PSTAlertAction *cancelInstallAction = [PSTAlertAction actionWithTitle:NSLocalizedString(@"Cancel", "")
+                                                            style:PSTAlertActionStyleDestructive
+                                                          handler:nil];
+    [alertController addAction:cancelInstallAction];
+    [alertController showWithSender:nil controller:nil animated:YES completion:NULL];
+}
+
+- (void)shareSessionAction {
+    if ([self checkIfWeChatInstalled]) {
+        [self setScene:WXSceneSession];
+        [self sendColorContent];
+    } else {
+        [self alertIfNeedInstallWeChat];
+    }
+}
+
+- (void)shareTimelineAction {
+    if ([self checkIfWeChatInstalled]) {
+        [self setScene:WXSceneTimeline];
+        [self sendColorContent];
+    } else {
+        [self alertIfNeedInstallWeChat];
+    }
+}
+
 #pragma WXApiDelegate
 - (void)onReq:(BaseReq *)req {
     // WeChat => HeyHere

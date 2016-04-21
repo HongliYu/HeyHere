@@ -106,13 +106,11 @@ static const long ddLogLevel = DDLogLevelAll;
 }
 
 - (IBAction)shareSessionAction:(id)sender {
-    [[HHShareManager sharedHHShareManager] setScene:WXSceneSession];
-    [[HHShareManager sharedHHShareManager] sendColorContent];
+    [[HHShareManager sharedHHShareManager] shareSessionAction];
 }
 
 - (IBAction)shareTimelineAction:(id)sender {
-    [[HHShareManager sharedHHShareManager] setScene:WXSceneTimeline];
-    [[HHShareManager sharedHHShareManager] sendColorContent];
+    [[HHShareManager sharedHHShareManager] shareTimelineAction];
 }
 
 #pragma mark - MFMessageComposeViewControllerDelegate
