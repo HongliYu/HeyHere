@@ -1,8 +1,18 @@
-# HeyHere
+HeyHere (嘿，在这里~)
+===========
 
-An iOS App，Let the screen flash up.
+## Installation(安装)
+
+    pod install
+
+## Usage(使用)
+
+* Select the color, set the frequency of flashing, waving the phone,  let your friend find you
+
+* 选取颜色，设置闪烁的频率，挥动手机，让朋友迅速找到你
+
+## Download(下载)
+* [App Store](https://itunes.apple.com/app/firefox-web-browser/id967104158)
 
 ## License
-
-The App is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+[MIT License](http://opensource.org/licenses/MIT)
